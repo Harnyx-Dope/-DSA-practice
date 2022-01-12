@@ -1,3 +1,5 @@
+package Multithreading;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.sql.*;
@@ -65,7 +67,7 @@ public class stu
                 name=sc.nextLine();
                 System.out.println("Enter the roll no. of the student");
                 rollno=sc.nextInt();
-                System.out.println("Enter the marks of the stu");
+                System.out.println("Enter the marks of the Multithreading.stu");
                 marks=sc.nextInt();
                 sc.nextLine();
 

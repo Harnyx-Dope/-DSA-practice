@@ -35,23 +35,21 @@
         return name;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         int[] marks = new int[5];
         check[] arr = new check[5];
 
 
         Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++)
+        {
             arr[i]=new check();
 
             arr[i].setMarks(sc.nextInt());
             arr[i].setrollno(sc.nextInt());
             sc.nextLine();
             arr[i].setName(sc.nextLine());
-
-
-
-
         }
         int i = 0;
         for (int f = 0; f < 5; f++) {
