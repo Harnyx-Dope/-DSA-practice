@@ -1,0 +1,53 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class book
+{
+    static int n,arr[],d;
+    book()
+    {
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        System.out.println("Enter the time youwant to rotate the element");
+        d=sc.nextInt();
+    }
+    void rotate(int arr[],int n,int d)
+    {
+        int j=0,c=0;
+        for(int i=0;i<d;i++)
+        {
+            int temp=arr[i-c];
+            for(j=0;j<n-1;j++)
+            {
+                arr[j]=arr[j+1];
+            }
+            arr[j]=temp;
+            c++;
+
+
+        }
+        for (int i = 0; i < n; i++) {
+
+
+            System.out.print(arr[i]+" ");
+        }
+
+    }
+    public static void main(String[] args)
+    {
+        book obj=new book();
+        obj.rotate(arr,n,d);
+    }
+}
+
+
+
+
+
+
