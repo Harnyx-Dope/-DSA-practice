@@ -1,0 +1,67 @@
+package Practice;
+
+import java.util.Scanner;
+
+public class book
+{
+    private String name;
+    private int petals;
+     private float price;
+
+     Scanner sc=new Scanner(System.in);
+
+     book()
+     {
+         setName(sc.nextLine());
+          setPetals(sc.nextInt());
+          setPrice(sc.nextInt());
+          sc.nextLine();
+     }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPetals() {
+        return petals;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public void setPetals(int petals) {
+        this.petals = petals;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        book[] arr=new book[5];
+        for (int i = 0; i < 5; i++)
+        {
+            arr[i]=new book();
+
+
+        }
+        for (book res:arr)
+        {
+            System.out.println(res.getName());
+            System.out.println(res.getPetals());
+            System.out.println(res.getPrice());
+
+        }
+
+    }
+
+}
